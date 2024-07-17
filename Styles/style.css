@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --primary-color: rgb(230, 83, 60);
+    --white: rgb(255, 255, 255);
+    --secondary-color: rgba(255, 255, 255, 0.5);
+}
+/* shared styles  */
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    max-width: 1200px;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+}
+.description-text{
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.btn-primary{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    padding: 1rem 2.5rem;
+    border-radius: 2.5rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-secondary{
+    outline: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2.5rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+section{
+    margin: 5.5rem 0;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--white);
+    text-align: center;
+}
+/* shared styles  */
+
+/* Navbar section styles  */
+header{
+    background-image: linear-gradient(-225.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0px;
+}
+.nav-logo h3{
+    font-size: 2.125rem;
+    color: var(--white);
+    font-weight: 800;
+}
+#fitness{
+    color: var(--primary-color);
+}
+.nav-items ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 5px;
+}
+.nav-items ul .nav-links{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1.125rem;
+    border-radius: 1rem;
+    transition: background-color 0.4s ease-in-out;
+}
+.nav-items ul .nav-links:hover, .active{
+        background-color: var(--primary-color);
+}
+.hamburger{
+    vertical-align: middle;
+    font-size: 2rem;
+    color: var(--white);
+    display: none;
+}
+/* Navbar section styles  */
+
+/* Banner section styles  */
+.banner-container{
+    color: var(--white);
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content, .banner-img{
+    flex: 1;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.banner-content .banner-title{
+    font-weight: 900;
+    font-size: 4.875rem;
+    line-height: 120%;
+}
+.banner-img{
+    text-align: right;
+    position: relative;
+}
+.banner-img .workout-videos, .tutorial-videos{
+    position: absolute;
+    padding: 1rem 1.25rem;
+    text-align: left;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    width: max-content;
+}
+.banner-img .workout-videos{
+    right: -15%;
+    top: 25%;
+}
+.banner-img .tutorial-videos{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    left: 25%;
+    bottom: 15%;
+}
+.workout-videos h3, .tutorial-videos h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.banner-img .tutorial-videos img{
+    width: 40px;
+    height: 40px;
+}
+/* Banner section styles  */
+
+/* Change habits section styles  */
+.change-habits-container > .description-text{
+    text-align: center;
+    margin-top: 0.875rem;
+}
+.change-habits-cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    margin-top: 3.625rem;
+}
+.change-habits-card{
+    text-align: center;
+}
+.change-habits-card h4{
+    font-size: 1.125rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-top: 1.85rem;
+    margin-bottom: .5rem;
+}
+.change-habits-card img{
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+/* Change habits section styles  */
+
+/* Run Extra styles  */
+.run-extra-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.run-extra-content{
+    grid-column: span 2;
+    text-align: left;
+}
+.run-extra-content .section-title{
+    text-align: left;
+    margin-bottom: 0.875rem;
+}
+.run-extra-content .description-text{
+    margin-bottom: 2rem;
+    max-width: 450px;
+}
+.run-extra-img img{
+    width: 100%;
+    border-radius: 1rem;
+}
+/* Run Extra styles  */
