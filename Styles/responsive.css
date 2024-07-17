@@ -39,6 +39,9 @@
     .change-habits-cards-container, .run-extra-container{
         grid-template-columns: 1fr;
     }
+    .run-extra-container{
+        padding: 1.5rem;
+    }
     .run-extra-content{
         margin-bottom: 1.5rem;
     }
