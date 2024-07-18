@@ -254,16 +254,16 @@ nav{
 .bmi-table th, td{
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 1.5rem 0.7rem 2rem;
 }
 .bmi-table th{
     color: var(--white);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 .bmi-table td{
     color: var(--secondary-color);
-    font-size: 0.825rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .calculate-container{
@@ -382,6 +382,7 @@ nav{
     border-bottom-right-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     margin-top: 3.56rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .pricing-card > p{
     font-weight: 600;
