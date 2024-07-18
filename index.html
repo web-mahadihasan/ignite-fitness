@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="Styles/style.css">
      <!-- Responsive CSS links -->
       <link rel="stylesheet" href="Styles/responsive.css">
+
       <!-- Font Awesome link -->
     <script src="https://kit.fontawesome.com/2a577dd113.js" crossorigin="anonymous"></script>
     <!-- Font Awesome links -->
@@ -69,58 +70,276 @@
     <!-- Header ends  -->
 
     <!-- Main section starts -->
-    <main class="container">
+    <main>
 
         <!-- Change habits section starts  -->
-         <section class="change-habits-container">
-            <h3 class="section-title">Change Your Habits</h3>
-            <p class="description-text">Our mission is to make health and wellness achievable for everyone, no matter where you are on your journey. <br> Join us and start making positive changes today!</p>
-
-            <div class="change-habits-cards-container">
-                <!-- Card 1 -->
-                <div class="change-habits-card">
-                    <img src="./images/habits-1.png" alt="">
-                    <h4>Movement</h4>
-                    <p class="description-text">Movement is essential for fitness as it strengthens muscles, improves flexibility, enhances cardiovascular health.</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="change-habits-card">
-                    <img src="./images/habits-2.png" alt="">
-                    <h4>Time</h4>
-                    <p class="description-text">Discover the essence of fitness time management at our club, where we prioritize efficiency and effectiveness in your wellness journey.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="change-habits-card">
-                    <img src="./images/habits-3.png" alt="">
-                    <h4>Practice</h4>
-                    <p class="description-text">Join our community and cultivate a fitness practice that not only transforms your body but also enhances your life.</p>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="change-habits-card">
-                    <img src="./images/habits-4.png" alt="">
-                    <h4>Weight Loss</h4>
-                    <p class="description-text">Through targeted workouts, nutritional guidance, we empower you to transform your health and achieve lasting results.</p>
+         <section>
+            <div class="change-habits-container container">
+                <h3 class="section-title center">Change Your Habits</h3>
+                <p class="description-text center">Our mission is to make health and wellness achievable for everyone, no matter
+                    where you are on your journey. <br> Join us and start making positive changes today!</p>
+            
+                <div class="change-habits-cards-container">
+                    <!-- Card 1 -->
+                    <div class="change-habits-card center">
+                        <img src="./images/habits-1.png" alt="">
+                        <h4>Movement</h4>
+                        <p class="description-text">Movement is essential for fitness as it strengthens muscles, improves
+                            flexibility, enhances cardiovascular health.</p>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="change-habits-card center">
+                        <img src="./images/habits-2.png" alt="">
+                        <h4>Time</h4>
+                        <p class="description-text">Discover the essence of fitness time management at our club, where we prioritize
+                            efficiency and effectiveness in your wellness journey.</p>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="change-habits-card center">
+                        <img src="./images/habits-3.png" alt="">
+                        <h4>Practice</h4>
+                        <p class="description-text">Join our community and cultivate a fitness practice that not only transforms
+                            your body but also enhances your life.</p>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="change-habits-card center">
+                        <img src="./images/habits-4.png" alt="">
+                        <h4>Weight Loss</h4>
+                        <p class="description-text">Through targeted workouts, nutritional guidance, we empower you to transform
+                            your health and achieve lasting results.</p>
+                    </div>
                 </div>
             </div>
          </section>
         <!-- Change habits section ends  -->
 
         <!-- Run Extra section starts  -->
-         <section class="run-extra-container">
-            <div class="run-extra-content">
-                <h3 class="section-title">Run an Extra <br>
-                Mile Easily</h3>
-                <p class="description-text">Through targeted exercises and professional guidance, we equip you with the strength and endurance to comfortably exceed your mileage goals. Join our community and redefine your running experience.</p>
-                <button class="btn-primary">Join Now</button>
-            </div>
-            <div class="run-extra-img">
-                <img src="./images/run1.png" alt="">
+         <section>
+            <div class="run-extra-container container">
+                <div class="run-extra-content">
+                    <h3 class="section-title">Run an Extra <br>
+                        Mile Easily</h3>
+                    <p class="description-text">Through targeted exercises and professional guidance, we equip you with the strength
+                        and endurance to comfortably exceed your mileage goals. Join our community and redefine your running
+                        experience.</p>
+                    <button class="btn-primary">Join Now</button>
+                </div>
+                <div class="run-extra-img">
+                    <img src="./images/run1.png" alt="">
+                </div>
             </div>
          </section>
         <!-- Run Extra section starts  -->
+
+        <!-- BMI Calculate section starts  -->
+         <section class="bmi-calculate-container">
+            <div class="container">
+                <div class="bmi-calculate-header">
+                    <h3 class="section-title ">BMI Calculator</h3>
+                    <p class="description-text ">Calculating your BMI is important for assessing your overall health, understanding
+                        your body composition, Health Monitoring, achieve your Fitness Goals and get Nutritional Guidance based on
+                        yuo BMI.
+                    </p>
+                </div>
+                <div class="bmi-calculate-content">
+                    <div class="bmi-calculate-chart">
+                        <h3 class="section-subtitle">BMI Calculator Chart</h3>
+                        <table class="bmi-table">
+                            <thead>
+                                <tr class="table-row">
+                                    <th>BMI Range</th>
+                                    <th>Weight Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Below 18.5</td>
+                                    <td>Underweight</td>
+                                </tr>
+                                <tr>
+                                    <td>18.5 - 24.9</td>
+                                    <td>Healthy</td>
+                                </tr>
+                                <tr>
+                                    <td>25.0 - 29.9</td>
+                                    <td>Overweight</td>
+                                </tr>
+                                <tr>
+                                    <td>30.0 - and Above</td>
+                                    <td>Obese</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bmi-calculator">
+                        <h3 class="section-subtitle">Calculate your BMI</h3>
+                        <p class="description-text">Use our BMI (Body Mass Index) calculator to quickly assess your body composition based on your height and weight.
+                        </p>
+                        <div class="calculate-container">
+                            <input class="input" type="text" name="" id="" placeholder="Height/cm">
+                            <input class="input" type="text" name="" id="" placeholder="Weight/kg">
+                            <input class="input" type="text" name="" id="" placeholder="Age">
+                            <select class="select" name="" id="">
+                                <option value="" selected disabled>Sex</option>
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                            </select>
+                            <select class="select" id="select" name="" id="">
+                                <option value="" selected disabled>Select an activity factor</option>
+                                <option value="">Sedentary</option>
+                                <option value="">Lightly active</option>
+                                <option value="">Moderately active</option>
+                                <option value="">Very active</option>
+                                <option value="">Extra active</option>
+                            </select>
+                            <div>
+                                <button class="btn-primary">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- BMI Calculate section ends  -->
+
+
+
+        <!-- Meet team section starts  -->
+         <section>
+            <div class="team-container container">
+                <h3 class="section-title center">Meet Our Team</h3>
+                <p class="description-text center">At Ignite Fitness, our team of dedicated fitness trainers is committed to helping you achieve your health and wellness goals. With expertise in various fitness disciplines including strength training, cardiovascular conditioning, yoga, and more, our trainers are here to guide and motivate you every step of the way.                    
+                </p>
+
+                <div class="team-cards-container">
+                    <!-- Trainer 1 -->
+                    <div class="team-card">
+                        <img src="./images/trainer1.png" alt="">
+                        <div class="trainer-name">
+                            <h4>Madison Froning</h4>
+                            <small>Trainer</small>
+                        </div>
+                    </div>
+                    <!-- Trainer 2 -->
+                    <div class="team-card">
+                        <img src="./images/trainer2.png" alt="">
+                        <div class="trainer-name">
+                            <h4>Cameron Williamson</h4>
+                            <small>Trainer</small>
+                        </div>
+                    </div>
+                    <!-- Trainer 3 -->
+                    <div class="team-card">
+                        <img src="./images/trainer3.png" alt="">
+                        <div class="trainer-name">
+                            <h4>Darrell Steward</h4>
+                            <small>Trainer</small>
+                        </div>
+                    </div>
+                    <!-- Trainer 4 -->
+                    <div class="team-card">
+                        <img src="./images/trainer4.png" alt="">
+                        <div class="trainer-name">
+                            <h4>Dianne Russell</h4>
+                            <small>Trainer</small>
+                        </div>
+                    </div>
+                    <!-- Trainer 5 -->
+                    <div class="team-card">
+                        <img src="./images/trainer5.png" alt="">
+                        <div class="trainer-name">
+                            <h4>Cody Fisher</h4>
+                            <small>Trainer</small>
+                        </div>
+                    </div>
+                    <!-- Trainer 6 -->
+                    <div class="team-card">
+                        <img src="./images/trainer6.png" alt="">
+                        <div class="trainer-name">
+                            <h4>Teresa Webb</h4>
+                            <small>Trainer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- Meet team section ends -->
+
+        <!-- Bonus part -->
+         <!-- Pricing section start  -->
+         <section>
+            <div class="pricing-container container">
+                <p class="description-text center">Pricing</p>
+                <h3 class="section-title center">Choose the Program</h3>
+                <div class="time-period center">
+                    <li class="monthly">Monthly</li>
+                    <li>Yearly</li>
+                </div>
+                <div class="pricing-cards-container">
+                    <!-- Card 1 -->
+                    <div class="pricing-card">
+                        <h4 class=" pricing-title">Basic <i class="fa-solid fa-bolt"></i></h4>
+                        <p class="section-subtitle ">$150</p>
+                        <hr class="hr">
+                        <ul class="features">
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Unlimited Gym Access</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>5 sessions per week</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>30 days of unlimited access</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Access to our fitness app</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>24/7 customer support</li>
+                            <li id="inactive"><i class="fa-solid fa-circle-check"></i>20 minutes of heart-pumping spin</li>
+                            <li id="inactive"><i class="fa-solid fa-circle-check"></i>50 Class Times Available</li>
+                            <li id="inactive"><i class="fa-solid fa-circle-check"></i>Online Members Area</li>
+                        </ul>
+                        <button class="btn-primary">Get Started</button>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="pricing-card card-2">
+                        <h4 class=" pricing-title">Premium<i class="fa-brands fa-square-web-awesome-stroke"></i></h4>
+                        <p class="section-subtitle">$399</p>
+                        <hr class="hr">
+                        <ul class="features">
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Unlimited Gym Access</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>5 sessions per week</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>30 days of unlimited access</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Access to our fitness app</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>24/7 customer support</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>20 minutes of heart-pumping spin</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>50 Class Times Available</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Online Members Area</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>2x Fitness Consultant</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>3x Free Suplement</li>
+                            <li id="inactive"><i class="fa-solid fa-circle-check"></i>Gym Card</li>
+                            <li id="inactive"><i class="fa-solid fa-circle-check"></i>Personal Trainer</li>
+                        </ul>
+                        <button class="btn-primary">Get Started</button>
+                        <div class="best-price">
+                            <span>Best Price</span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="pricing-card">
+                        <h4 class=" pricing-title">Athlete<i class="fa-solid fa-shield-virus"></i></h4>
+                        <p class="section-subtitle">$599</p>
+                        <hr class="hr">
+                        <ul class="features">
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Unlimited Gym Access</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Get all premium features</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>1 Hours of heart-pumping spin</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>80 Class Times Available</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>5x Fitness Consultant</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>5x Free Suplement</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Gym Card</li>
+                            <li><i class="fa-solid fa-circle-check" id="active"></i>Personal Trainer</li>
+                        </ul>
+                        <button class="btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+         </section>
 
     </main>
     <!-- Main section ends -->

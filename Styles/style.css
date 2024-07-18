@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 *{
     margin: 0;
@@ -11,10 +12,10 @@
     --white: rgb(255, 255, 255);
     --secondary-color: rgba(255, 255, 255, 0.5);
 }
-/* shared styles  */
 body{
     background-color: rgb(0, 0, 0);
 }
+/* shared styles  */
 .container{
     max-width: 1200px;
     padding: 0 1.25rem;
@@ -56,9 +57,19 @@ section{
     font-size: 3rem;
     font-weight: 900;
     color: var(--white);
+    margin-bottom: 0.875rem;
+}
+.section-subtitle{
+    color: var(--white);
+    font-weight: 900;
+    font-size: 1.625rem;
+    margin-bottom: 0.875rem;
+}
+.center{
     text-align: center;
 }
 /* shared styles  */
+
 
 /* Navbar section styles  */
 header{
@@ -84,8 +95,8 @@ nav{
     align-items: center;
     gap: 3rem;
     list-style: none;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
     padding: 5px;
 }
 .nav-items ul .nav-links{
@@ -109,6 +120,7 @@ nav{
 }
 /* Navbar section styles  */
 
+
 /* Banner section styles  */
 .banner-container{
     color: var(--white);
@@ -129,6 +141,11 @@ nav{
     font-weight: 900;
     font-size: 4.875rem;
     line-height: 120%;
+}
+#shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 10rem;
+    font-weight: 300;
 }
 .banner-img{
     text-align: right;
@@ -165,19 +182,13 @@ nav{
 }
 /* Banner section styles  */
 
+
 /* Change habits section styles  */
-.change-habits-container > .description-text{
-    text-align: center;
-    margin-top: 0.875rem;
-}
 .change-habits-cards-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
     margin-top: 3.625rem;
-}
-.change-habits-card{
-    text-align: center;
 }
 .change-habits-card h4{
     font-size: 1.125rem;
@@ -192,6 +203,7 @@ nav{
 }
 /* Change habits section styles  */
 
+
 /* Run Extra styles  */
 .run-extra-container{
     display: grid;
@@ -203,18 +215,227 @@ nav{
 }
 .run-extra-content{
     grid-column: span 2;
-    text-align: left;
 }
 .run-extra-content .section-title{
     text-align: left;
-    margin-bottom: 0.875rem;
 }
 .run-extra-content .description-text{
     margin-bottom: 2rem;
-    max-width: 450px;
+    max-width: 500px;
 }
 .run-extra-img img{
     width: 100%;
     border-radius: 1rem;
 }
 /* Run Extra styles  */
+
+
+/* BMI Calculate styles  */
+.bmi-calculate-container{
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    padding: 3.5rem 0;
+}
+.bmi-calculate-header{
+    max-width: 60%;
+    margin: 0 auto;
+}
+.bmi-calculate-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--white);
+    margin-top: 5rem;
+}
+.bmi-table{
+    border-collapse: collapse;
+    margin: 3.25rem 0;
+}
+.bmi-table th, td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 0.7rem 1.5rem;
+}
+.bmi-table th{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.bmi-table td{
+    color: var(--secondary-color);
+    font-size: 0.825rem;
+    font-weight: 500;
+}
+.calculate-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+.calculate-container #select{
+    grid-column: span 2;
+    margin-bottom: 1.5rem;
+}
+.calculate-container .input, .calculate-container .select{
+    height: 3rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 2.5rem;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.calculate-container .select option{
+    background-color: rgb(34, 34, 34);
+    border: none;
+    outline: none;
+}
+/* BMI Calculate styles  */
+
+/* Meet team section styles */
+.team-container .description-text{
+    max-width: 671px;
+    margin: 0 auto;
+}
+.team-cards-container{
+    margin-top: 3.625rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+.team-card{
+    position: relative;
+}
+.team-card img{
+    width: 100%;
+    border-radius: 1rem;
+    height: 280px;
+    object-fit: cover;
+}
+.team-card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+}
+.team-card .trainer-name{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+.team-card .trainer-name h4{
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.team-card .trainer-name small{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+/* Meet team section styles */
+
+/* Bonus part  */
+/* Pricing section styles  */
+.pricing-container .time-period{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0.4rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: max-content;
+    border-radius: 2rem;
+    margin: 2rem auto;
+}
+.time-period li{
+    padding: 0.8rem 2.5rem;
+    color: var(--white);
+    border-radius: 2rem;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.time-period .monthly{
+    background-color: var(--primary-color);
+}
+.time-period li:hover{
+    background-color: var(--primary-color);
+}
+.pricing-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+}
+.pricing-card{
+    color: var(--white);
+    padding: 2.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 3.56rem;
+}
+.pricing-card > p{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+.pricing-card .pricing-title{
+    width: max-content;
+    /* padding: 1rem; */
+    margin-bottom: 0.75rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.pricing-card .pricing-title i{
+    color: var(--primary-color);
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+.pricing-card .hr{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+}
+.pricing-card ul li{
+    list-style: none;
+    margin-bottom: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.pricing-card ul li .fa-solid{
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+.pricing-card .features #active{
+    color: var(--primary-color);
+}
+.pricing-card .features #inactive{
+    color: rgba(255, 255, 255, 0.3);
+}
+.pricing-card  .btn-primary{
+    margin-top: 1.5rem;
+}
+.pricing-cards-container .card-2{
+    position: relative;
+    overflow: hidden;
+}
+.pricing-cards-container .best-price{
+    position: absolute;
+    color: var(--white);
+    padding: 0.5rem 3rem;
+    background-color: var(--primary-color);
+    width: max-content;
+    font-size: 1.25rem;
+    top: 30px;
+    right: -40px;
+    transform: rotate(42deg);
+}
+/* Pricing section styles  */

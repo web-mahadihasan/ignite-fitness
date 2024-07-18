@@ -17,6 +17,9 @@
     .banner-content .banner-title{
         font-size: 2.25rem;
     }
+    #shape{
+        font-size: 5rem;
+    }
     .banner-btn .btn-primary, .btn-secondary{
         padding: 1rem 1.5rem;
         margin-left: 0.5rem;
@@ -45,5 +48,17 @@
     .run-extra-content{
         margin-bottom: 1.5rem;
     }
-
+    .bmi-calculate-header{
+        max-width: 100%;
+        margin: 0;
+    }
+    .bmi-calculate-content, .calculate-container,
+    .team-cards-container,
+    .pricing-cards-container
+    {
+        grid-template-columns: 1fr;
+    }
+    .calculate-container #select{
+        grid-column: span 1;
+    }
 }
