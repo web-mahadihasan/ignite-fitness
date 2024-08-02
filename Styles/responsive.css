@@ -1,3 +1,61 @@
+@media screen and (min-width: 769px) and (max-width: 1025px){
+    .banner-img .workout-videos{
+        top: 30%;
+        right: 0%;
+    }
+}
+@media screen and (max-width: 769px) {
+     /* shared styles  */
+    .section-title{
+        font-size: 2rem;        
+    }
+    /* shared styles  */
+    .nav-items{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .banner-container{
+        flex-direction: column;
+        height: auto;
+    }
+    .banner-content .banner-title{
+        font-size: 4.25rem;
+    }
+    #shape{
+        font-size: 5rem;
+    }
+    /* .banner-img .workout-videos{
+        top: 25%;
+        right: 0%;
+    } */
+     .banner-img .tutorial-videos{
+        left: -10%;
+        bottom: 10%;
+    }
+    .change-habits-cards-container, .team-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bmi-calculate-content, .footer-content{
+        grid-template-columns: 1fr;
+    }
+    .bmi-calculate-header{
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .bmi-calculate-chart, .bmi-table{
+        text-align: center;
+        margin: 3.25rem  auto;
+    }
+    .pricing-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-content: center;
+    }
+}
+
 @media screen and (max-width: 576px) {
     /* shared sytle  */
     .section-title{
@@ -21,8 +79,8 @@
         font-size: 5rem;
     }
     .banner-btn .btn-primary, .btn-secondary{
-        padding: 1rem 1.5rem;
-        margin-left: 0.5rem;
+        padding: 0.9rem 1.5rem;
+        margin-left: 0px;
         margin-bottom: 3rem;
     }
     .banner-img{
@@ -30,7 +88,10 @@
     }
     .banner-img .workout-videos{
         top: 10%;
-        right: -5%;
+        right: -3%;
+    }
+    .workout-videos h3, .tutorial-videos h3{
+        font-size: 2rem;
     }
     .banner-img .tutorial-videos{
         left: 0;
@@ -48,17 +109,41 @@
     .run-extra-content{
         margin-bottom: 1.5rem;
     }
+    /* optional  */
+    .exercises-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .exercises-container .exercises-card{
+        grid-column: span 1;
+    }
+    .exercises-container .exercises-card .exercise-title
+    {
+        left: 1rem;
+    }
     .bmi-calculate-header{
         max-width: 100%;
         margin: 0;
     }
     .bmi-calculate-content, .calculate-container,
     .team-cards-container,
-    .pricing-cards-container
+    .pricing-cards-container,
+    .footer-content,
+    .footer-info
     {
         grid-template-columns: 1fr;
     }
     .calculate-container #select{
         grid-column: span 1;
+    }
+    .free-consultation-container{
+        flex-direction: column;
+        padding: 1rem 1.25rem;
+    }
+    .get-consultation{
+        text-align: left;
+        margin-top: 2rem;
+    }
+    .footer-content .nav-logo h3{
+    font-size: 2.375rem;
     }
 }
