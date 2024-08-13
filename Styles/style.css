@@ -73,7 +73,6 @@ section{
 
 /* Navbar section styles  */
 header{
-    /* background-image: linear-gradient(-225.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
     width: 100%;
     background-image: linear-gradient(180.00deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0.3), rgba(119, 119, 119, 0.3), rgba(119, 119, 119, 0.3),rgba(119, 119, 119, 0) 100%);
     background-blend-mode: overlay; 
@@ -256,7 +255,7 @@ nav{
 }
 
 .exercises-container .exercises-card-1{
-    background-image: url(../images/exercise1.jpg);
+    background-image: url(../images/exercise1.png);
     grid-column: span 2;
     background-color: rgba(6, 255, 210, 0.5);
 }
@@ -279,7 +278,7 @@ nav{
     background-color:rgba(0, 0, 0, 0.5);
 }
 .exercises-container .exercises-card-5{
-    background-image: url(../images/exercise5.jpg);
+    background-image: url(../images/exercise5.png);
     grid-column: span 3;
     background-color:rgba(66, 255, 0, 0.3);
 }
