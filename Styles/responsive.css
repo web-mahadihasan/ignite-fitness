@@ -1,7 +1,17 @@
+@media screen and (min-width: 769px) and (max-width: 1441px){
+    .banner-img .workout-videos{
+        top: 30%;
+        right: 0%;
+    }
+}
 @media screen and (min-width: 769px) and (max-width: 1025px){
     .banner-img .workout-videos{
         top: 30%;
         right: 0%;
+    }
+    .banner-img .tutorial-videos{
+        left: 15%;
+        bottom: 10%;
     }
 }
 @media screen and (max-width: 769px) {
@@ -87,7 +97,7 @@
         text-align: left;
     }
     .banner-img .workout-videos{
-        top: 10%;
+        top: 15%;
         right: -3%;
     }
     .workout-videos h3, .tutorial-videos h3{
